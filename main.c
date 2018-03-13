@@ -66,7 +66,7 @@ int main(int argc, char* argv[]) {
                 perror("MSG SENT");
                 exit(1);
             }
-        }{
+        } else {
             int contains = 0;
             for(int i = 0; i < clientsConnected; i++){
                 if( clients[i].sin_port == client.sin_port ){
